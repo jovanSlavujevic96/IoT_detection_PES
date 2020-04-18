@@ -8,7 +8,6 @@ path to the models/research libraries:
 https://github.com/tensorflow/models/releases/tag/v1.12.0
 
 installation of tensorflow on python3 with virtualenv:
-
 https://www.tensorflow.org/install/pip
 
 steps to initialise and connect models/research libraries:
