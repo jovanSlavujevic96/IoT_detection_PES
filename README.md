@@ -4,11 +4,25 @@ This project is intended for master studies of FTN - Faculty of Technical Scienc
 
 In this project has been implemented human face detection on frame via opencv's cascade classifier, afterwards face recognition with tensorflow's detection model trained with tensorflow object detection API and alcohol detection with sensor MQ-2. Detection informations have been published to FTN's Cloud server made in cooperation with Wolkabout. Project is written in Python programming language, developed on Ubuntu OS environment on PC, afterwards on Raspberry Pi.
 
-path to the models/research libraries:
+1.download and extract this library to $HOME directory
 https://github.com/tensorflow/models/releases/tag/v1.12.0
 
-installation of tensorflow on python3 with virtualenv:
+2.if you have nvidia gpu and want to use tensorflow-gpu follow this script to install prerequisites:
+https://www.tensorflow.org/install/gpu#ubuntu_1804_cuda_101
+
+3.follow steps of installation of tensorflow with python3 and virtualenv:
+#FOR THIS PROJECT:$ pip install tensorflow-gpu==1.15.0 
 https://www.tensorflow.org/install/pip
 
-steps to initialise and connect models/research libraries:
+4.steps to initialise and connect models/research libraries:
 https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md
+
+5.go to: $HOME/models-1.12.0/research/object_detection/utils/visualization_utils.py
+change definition of function: visualize_boxes_and_labels_on_image_array (line 543)
+go to line 675 and instead of:
+  return image
+paste this lines:
+  try:
+    return (image, box_to_display_str_map[box])
+  except NameError:
+    return (image, '/')
