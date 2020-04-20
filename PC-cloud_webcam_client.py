@@ -37,7 +37,10 @@ except NameError:
 
 def receivement_from_rPi_server():
     s.send(b'0')
-    drunk_val = bool(s.recv(1024))
+    rcv = s.recv(1024)
+    print(rcv)
+    print(int(rcv))    
+    drunk_val = bool(int(rcv))
     print('received: ', str(drunk_val) )
     return drunk_val
 
@@ -247,7 +250,7 @@ time.sleep(1)
 print("\n\nConnecting to WolkAbout IoT Platform")
 try:
     wolk_device.connect()
-    print("#2 Connection unsuccessful.")
+    print("#2 Connection successful.")
 except RuntimeError as e:
     print("#2 Connection unsuccessful.")
     print(str(e))
