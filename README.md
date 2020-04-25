@@ -26,7 +26,7 @@
 ### go to line 675 and instead of:
 ###   return image
 ### paste this lines:
-###   try:
+###   try:  
 ###     return (image, box_to_display_str_map[box])
 ###   except NameError:
 ###     return (image, '/')
