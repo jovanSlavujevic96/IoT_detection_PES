@@ -5,7 +5,7 @@
 ### In this project has been implemented human face detection on frame via opencv's cascade classifier, afterwards face recognition with tensorflow's detection model trained with tensorflow object detection API and alcohol detection with sensor MQ-2. Detection informations have been published to FTN's Cloud server made in cooperation with Wolkabout. Project is written in Python programming language, developed on Ubuntu OS environment on PC, afterwards on Raspberry Pi.
 
 ## 1.download and extract this library to $HOME directory
-#https://github.com/tensorflow/models/releases/tag/v1.12.0
+# https://github.com/tensorflow/models/releases/tag/v1.12.0
 
 ## 2.if you have nvidia gpu and want to use tensorflow-gpu follow this script to install prerequisites:
 # https://www.tensorflow.org/install/gpu#ubuntu_1804_cuda_101 
