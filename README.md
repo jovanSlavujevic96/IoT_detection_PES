@@ -6,7 +6,7 @@ In this project has been implemented human face detection on frame via opencv's 
 
 #### 1.download and extract [this library](https://github.com/tensorflow/models/releases/tag/v1.12.0) to $HOME directory  
 
-#### 2.if you have nvidia gpu and want to use tensorflow-gpu follow [this script] (https://www.tensorflow.org/install/gpu#ubuntu_1804_cuda_101 ) to install prerequisites
+#### 2.if you have nvidia gpu and want to use tensorflow-gpu follow [this script](https://www.tensorflow.org/install/gpu#ubuntu_1804_cuda_101 ) to install prerequisites
 P.S. instead of 10.1 install cuda 10.0 (tensorflow 1.15 supports this version of cuda), also on .bashrc set environment variables:
 ```
 PATH=$PATH:/usr/local/cuda-10.0/bin
