@@ -20,7 +20,7 @@ user:$ pip install tensorflow-gpu==1.15.0
 #### 5.go to: $HOME/models-1.12.0/research/object_detection/utils/visualization_utils.py
 change definition of function: visualize_boxes_and_labels_on_image_array (line 543), go to line 675 and instead of:
 ```
-return image
+   return image
 ```
 paste this lines:
 ```
